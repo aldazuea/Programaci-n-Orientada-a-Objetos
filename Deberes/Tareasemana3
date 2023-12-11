@@ -1,0 +1,27 @@
+class Temperatura:
+    def __init__(self, semanas):
+        self.semanas = semanas
+        self.temperaturas = []
+
+    def ingresar_temperaturas(self):
+        for i in range(self.semanas):
+            temperatura = float(input(f"Ingrese la temperatura de la semana {i+1}: "))
+            self.temperaturas.append(temperatura)
+
+    def temperatura_minima(self):
+        return min(self.temperaturas)
+
+    def temperatura_maxima(self):
+        return max(self.temperaturas)
+
+    def temperatura_promedio(self):
+        return sum(self.temperaturas) / len(self.temperaturas)
+
+
+semanas = 4
+t = Temperatura(semanas)
+t.ingresar_temperaturas()
+print("La temperatura mínima de las 4 semanas es:", t.temperatura_minima())
+print("La temperatura máxima de las 4 semanas es:", t.temperatura_maxima())
+print("La temperatura promedio de las 4 semanas es:", t.temperatura_promedio())
+
