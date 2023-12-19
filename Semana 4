@@ -1,0 +1,58 @@
+class Producto:
+    def __init__(self, nombre, precio, stock):
+        self.nombre = nombre
+        self.precio = precio
+        self.stock = stock
+
+    def mostrar_informacion(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Precio: ${self.precio}")
+        print(f"Stock: {self.stock} unidades")
+
+    def restar_stock(self, cantidad):
+        if self.stock >= cantidad:
+            self.stock -= cantidad
+            print(f"Se han vendido {cantidad} unidades de {self.nombre}")
+        else:
+            print(f"No hay suficiente stock de {self.nombre} para realizar la venta")
+
+class Tienda:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.productos = []
+
+    def agregar_producto(self, producto):
+        self.productos.append(producto)
+        print(f"Se ha agregado el producto {producto.nombre} a la tienda")
+
+    def mostrar_productos(self):
+        for producto in self.productos:
+            producto.mostrar_informacion()
+
+    def vender_producto(self, nombre, cantidad):
+        for producto in self.productos:
+            if producto.nombre == nombre:
+                producto.restar_stock(cantidad)
+                return
+        print(f"No se encontró el producto {nombre} en la tienda")
+
+# Crear objetos de productos
+producto1 = Producto("Camisa", 250, 10)
+producto2 = Producto("Pantalón", 500, 5)
+
+# Crear objeto de tienda
+tienda = Tienda("Mi Tienda")
+
+# Agregar productos a la tienda
+tienda.agregar_producto(producto1)
+tienda.agregar_producto(producto2)
+
+# Mostrar productos de la tienda
+tienda.mostrar_productos()
+
+# Vender producto
+tienda.vender_producto("Camisa", 3)
+
+# Mostrar información actualizada del producto
+producto1.mostrar_informacion()
+
