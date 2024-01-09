@@ -1,0 +1,10 @@
+def calcular_area(base, altura):
+    return (base * altura) / 2
+
+# Pedir al usuario los valores de base y altura
+base = float(input("Ingrese la base del triángulo: "))
+altura = float(input("Ingrese la altura del triángulo: "))
+
+# Calcular y mostrar el área del triángulo
+area = calcular_area(base, altura)
+print("El área del triángulo es:", area)
