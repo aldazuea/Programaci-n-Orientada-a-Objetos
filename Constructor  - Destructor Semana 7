@@ -1,0 +1,21 @@
+# Utilización constructores y destructores
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+        print("Se ha creado una persona con el nombre", self.nombre, "y la edad", self.edad)
+
+    def __del__(self):
+        print("Se ha eliminado a", self.nombre)
+
+# Creación de objetos de tipo Persona
+persona1 = Persona("Juan", 25)
+persona2 = Persona("María", 30)
+
+# Acceso a los atributos de los objetos
+print("El nombre de persona1 es", persona1.nombre)
+print("La edad de persona2 es", persona2.edad)
+
+# Eliminación de los objetos
+del persona1
+del persona2
