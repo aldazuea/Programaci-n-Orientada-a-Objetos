@@ -1,21 +1,50 @@
-# Utilización constructores y destructores
-class Persona:
-    def __init__(self, nombre, edad):
-        self.nombre = nombre
-        self.edad = edad
-        print("Se ha creado una persona con el nombre", self.nombre, "y la edad", self.edad)
+import threading
+import time
 
-    def __del__(self):
-        print("Se ha eliminado a", self.nombre)
+# Función que simula una tarea para un hilo
+def tarea_hilo(identificador, delay):
+    for i in range(5):
+        print(f'Hilo {identificador}: Realizando tarea {i}')
+        time.sleep(delay)
 
-# Creación de objetos de tipo Persona
-persona1 = Persona("Juan", 25)
-persona2 = Persona("María", 30)
+# Crear instancias de hilos
+hilo1 = threading.Thread(target=tarea_hilo, args=(1, 1))
+hilo2 = threading.Thread(target=tarea_hilo, args=(2, 0.8))
+hilo3 = threading.Thread(target=tarea_hilo, args=(3, 1.2))
 
-# Acceso a los atributos de los objetos
-print("El nombre de persona1 es", persona1.nombre)
-print("La edad de persona2 es", persona2.edad)
+# Iniciar los hilos
+hilo1.start()
+hilo2.start()
+hilo3.start()
 
-# Eliminación de los objetos
-del persona1
-del persona2
+# Esperar a que todos los hilos terminen
+hilo1.join()
+hilo2.join()
+hilo3.join()
+
+print('Programa principal: Todas las tareas han sido completadas.')
+import threading
+import time
+
+# Función que simula una tarea para un hilo
+def tarea_hilo(identificador, delay):
+    for i in range(5):
+        print(f'Hilo {identificador}: Realizando tarea {i}')
+        time.sleep(delay)
+
+# Crear instancias de hilos
+hilo1 = threading.Thread(target=tarea_hilo, args=(1, 1))
+hilo2 = threading.Thread(target=tarea_hilo, args=(2, 0.8))
+hilo3 = threading.Thread(target=tarea_hilo, args=(3, 1.2))
+
+# Iniciar los hilos
+hilo1.start()
+hilo2.start()
+hilo3.start()
+
+# Esperar a que todos los hilos terminen
+hilo1.join()
+hilo2.join()
+hilo3.join()
+
+print('Programa principal: Todas las tareas han sido completadas.')
