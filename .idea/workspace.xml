@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3929079-62bb-4d34-8556-add0ea41bc31" name="Changes" comment="InventarioAvanzadoS11" />
+    <list default="true" id="d3929079-62bb-4d34-8556-add0ea41bc31" name="Changes" comment="Semana12Sdos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +50,7 @@
   "keyToString": {
     "Python.InventarioAvanzadoS11.executor": "Run",
     "Python.Semana10segse.executor": "Run",
+    "Python.Semna122do.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -91,6 +92,7 @@
       <workItem from="1708563850770" duration="6000" />
       <workItem from="1708563972215" duration="424000" />
       <workItem from="1709080828879" duration="299000" />
+      <workItem from="1709684221007" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="Tarea semana 4">
       <option name="closed" value="true" />
@@ -156,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709080947137</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Semana12Sdos">
+      <option name="closed" value="true" />
+      <created>1709684356665</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709684356665</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +181,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="semana10s" />
     <MESSAGE value="InventarioAvanzadoS11" />
-    <option name="LAST_COMMIT_MESSAGE" value="InventarioAvanzadoS11" />
+    <MESSAGE value="Semana12Sdos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semana12Sdos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Programaci_n_Orientada_a_Objetos$InventarioAvanzadoS11.coverage" NAME="InventarioAvanzadoS11 Coverage Results" MODIFIED="1709080911803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Deberes" />
